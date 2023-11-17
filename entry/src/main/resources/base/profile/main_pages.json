@@ -4,6 +4,7 @@
     "pages/Index",
     "pages/Second",
     "pages/PropDiffLinkPage",
-    "pages/HomePage"
+    "pages/HomePage",
+    "pages/TestGridPage"
   ]
 }
