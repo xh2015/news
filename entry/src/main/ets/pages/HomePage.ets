@@ -1,24 +1,20 @@
 import router from '@ohos.router';
+import NewsItem from '../component/NewsItem'
 
 @Entry
 @Component
 struct HomePage {
   @State message: string = 'Hello World'
   // private username: string = router.getParams()['username']
+  @State newsListInfo: string[] = ['女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二', '女生一', '女生二']
 
   build() {
     List() {
-      ListItem() {
-        Text('列表一')
-          .fontSize(20)
-          .fontColor(Color.Red)
-      }
-
-      ListItem() {
-        Text('列表二')
-          .fontSize(20)
-          .fontColor(Color.Red)
-      }
+      ForEach(this.newsListInfo, (item, index) => {
+        ListItem(){
+          NewsItem()
+        }
+      })
     }
   }
 
