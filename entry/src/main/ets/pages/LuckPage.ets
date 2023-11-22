@@ -1,6 +1,6 @@
 @Entry
 @Component
-struct LuckPage {
+export struct LuckPage {
   private luckyName: string[] = ['P50', '手机', '平板', '现金500', '开始抽奖', 'Q币40', '身体健康', 'iPhone14', '感谢参与']
   private realIndex: number[] = [0, 1, 2, 5, 8, 7, 6, 3]
   @State message: string = 'Hello World'

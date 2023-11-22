@@ -3,7 +3,7 @@ import LoginInput from '../component/LoginInput'
 
 @Entry
 @Component
-struct LoginPage {
+export struct LoginPage {
   @State message: string = 'Hello World'
   @State inputAccountValue: string = '123'
   @State inputPwdValue: string = '123'
@@ -35,7 +35,7 @@ struct LoginPage {
       .margin({ top: 20 })
       .width('100%')
       .onClick(() => {
-        router.pushUrl({ url: 'pages/HomePage', params: { 'username': '张三' } })
+        router.pushUrl({ url: 'pages/MainPage', params: { 'username': '张三' } })
       })
   }
 

@@ -6,6 +6,7 @@
     "pages/PropDiffLinkPage",
     "pages/HomePage",
     "pages/TestGridPage",
-    "pages/LuckPage"
+    "pages/LuckPage",
+    "pages/MainPage"
   ]
 }

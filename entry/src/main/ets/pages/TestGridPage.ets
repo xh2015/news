@@ -1,6 +1,6 @@
 @Entry
 @Component
-struct TestGridPage {
+export struct TestGridPage {
   @State message: string = 'Hello World'
 
   build() {
